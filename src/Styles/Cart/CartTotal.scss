@@ -1,0 +1,37 @@
+.cart-total{
+    font-size: 26px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-price{
+    justify-self: center;
+    align-self: center;
+    font-weight: lighter;
+    span{
+        font-weight: 500;
+    }
+}
+
+.paid-link{
+    background: #4DC185;
+    justify-self: center;
+    align-self: center;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .cart-total{
+        font-size: 18px;
+        height: 10%;
+    }
+    .paid-link{
+        font-size: 16px;
+    }
+}
