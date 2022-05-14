@@ -22,13 +22,13 @@ export default function Header({dispatch}) {
   }, [])
   return (
     <header className='header'>
-      <Link to="/" className='logo-link'><img src={logo}/></Link>
+      <Link to="/" className='logo-link'><img src={logo} alt="Logo"/></Link>
       <section>
           <input type="text" className='search-input' placeholder='Поиск' ref={inputRef}></input>
           <button className='catalogue-button' onClick={() => dispatch(catalogueHandler())}>Каталог</button>
           <div className='cart-link-container'>
             <Link to="/Cart" className='cart-link' ref={cartLink}>
-              <img src={cart}/>
+              <img src={cart} alt="Cart"/>
               <div className='cart-amount'>{totalAmount}</div>
             </Link>
           </div>

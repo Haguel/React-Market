@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch, useSelector, shallowEqual } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import { setProductType } from '../../Redux/actions/sort'
 import { setCatalogueActiveType, catalogueHandler } from '../../Redux/actions/catalogue'

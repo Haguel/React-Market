@@ -13,7 +13,7 @@ export default function CartMenu() {
   return (
     <section className='cart-menu'>
         <div className='cart-buttons-container'>
-            <Link to='/' className='cart-button main-link'><a>Вернуться к покупкам</a></Link>
+            <Link to='/' className='cart-button main-link'>Вернуться к покупкам</Link>
             <button className='cart-button' onClick={() => dispatch(emptyCart())}>Очистить корзину</button>
         </div>
         {

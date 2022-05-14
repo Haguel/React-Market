@@ -26,6 +26,11 @@
 .main-link{
     display: flex;
     align-items: center;
+    
+    a{
+        text-decoration: none;
+        color: #FF0038;
+    }
 }
 
 @media(max-width: 800px){

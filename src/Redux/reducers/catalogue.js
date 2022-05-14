@@ -35,7 +35,7 @@ const catalogue = (state = initialState, action) => {
             const newProductTypes = state.productTypes
 
             newProductTypes.forEach((type, id) => {
-                id == action.payload ? type.isActive = true : type.isActive = false
+                id === action.payload ? type.isActive = true : type.isActive = false
             });
             return{
                 ...state,

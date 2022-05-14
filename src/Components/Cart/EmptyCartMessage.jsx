@@ -6,7 +6,7 @@ export default function EmptyCartMessage() {
   return (
       <div className='empty-cart-message'>
           <div>Ваша корзина пустая. </div>
-          <Link to='/' className='cart-button main-link'><a>Вернуться к покупкам</a></Link>
+          <Link to='/' className='cart-button main-link'>Вернуться к покупкам</Link>
       </div>
   )
 }

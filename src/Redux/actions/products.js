@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const fetchProducts = (sortOptions, dispatch) => {  
 
-    if(sortOptions.productType == ''){
+    if(sortOptions.productType === ''){
         axios
         .get(`http://localhost:8000/products?_sort=${sortOptions.item}&_order=${sortOptions.method}`)
         .then(({ data }) => {

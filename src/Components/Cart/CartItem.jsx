@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { addAmount, reduceAmount, removeItem, setAmount } from '../../Redux/actions/cart'
+import {removeItem, setAmount } from '../../Redux/actions/cart'
 
 import '../../Styles/Cart/CartItem.scss'
 
@@ -9,7 +9,7 @@ export default function CartItem({item, id, dispatch}) {
   const [amount, changeAmount] = React.useState(item.amount)
 
   const amountInput = (input, id) => {
-    if(input == '' || input <= 0 || input >= 99){
+    if(input === '' || input <= 0 || input >= 99){
       changeAmount(item.amount)
     } else {
       dispatch(setAmount({
@@ -25,7 +25,7 @@ export default function CartItem({item, id, dispatch}) {
   return (
     <div className='cart-item'>
       <div className='cart-product-container'>
-        <div className='cart-product-image'><img src={item.image} /></div>
+        <div className='cart-product-image'><img src={item.image} alt="Product" /></div>
         <div className='cart-product-info'>
             <div className='cart-product-title'>{item.title}</div>
             <div className='cart-price-info'>

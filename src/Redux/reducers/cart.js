@@ -22,10 +22,10 @@ const cart = (state = initialState, action) => {
 
             let itemID = -1
             newItems.forEach((cartItem, id) => {
-                if(cartItem.title == item.title) itemID = id
+                if(cartItem.title === item.title) itemID = id
             })
 
-            if(itemID != -1) {
+            if(itemID !== -1) {
                 newItems[itemID].amount++
                 newItems[itemID].totalPrice = validatePrice(newItems[itemID].totalPrice + item.price)
             }
@@ -39,7 +39,7 @@ const cart = (state = initialState, action) => {
                 cartItems: newItems,
                 totalPrice: calculateTotalPrice(newItems),
                 totalAmount: newItems.length,
-                isEmpty: newItems.length == 0 ? true : false
+                isEmpty: newItems.length === 0 ? true : false
             }
         }
 
@@ -48,12 +48,12 @@ const cart = (state = initialState, action) => {
             const id = action.payload.id 
             let newItems = state.cartItems
 
-            if(input == "+"){
+            if(input === "+"){
                 newItems[id].amount++
                 newItems[id].totalPrice = validatePrice(newItems[id].totalPrice + newItems[id].price)
             } 
-            else if(input == "-") {  
-                if(newItems[id].amount != 1) {
+            else if(input === "-") {  
+                if(newItems[id].amount !== 1) {
                     newItems[id].amount--
                     newItems[id].totalPrice = validatePrice(newItems[id].totalPrice - newItems[id].price)
                 }
@@ -69,7 +69,7 @@ const cart = (state = initialState, action) => {
                 cartItems: newItems,
                 totalPrice: calculateTotalPrice(newItems),
                 totalAmount: newItems.length,
-                isEmpty: newItems.length == 0 ? true : false
+                isEmpty: newItems.length === 0 ? true : false
             }
         }
         case 'REMOVE_ITEM': {
@@ -79,7 +79,7 @@ const cart = (state = initialState, action) => {
                 cartItems: newItems,
                 totalPrice: calculateTotalPrice(newItems),
                 totalAmount: newItems.length,
-                isEmpty: newItems.length == 0 ? true : false
+                isEmpty: newItems.length === 0 ? true : false
             }
         }
 

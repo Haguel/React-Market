@@ -41,7 +41,7 @@ const sort =  (state = initialState, action) => {
             let newActiveSortTitle
 
             state.sortTypes.forEach((sortType, id) => {
-                if(action.payload == id){
+                if(action.payload === id){
                     newActiveSortTitle = sortType.title
                     sortType.isActive = true
                 } else {

@@ -8,7 +8,7 @@ export default function CartTotal() {
   return (
     <div className='cart-total'>
         <div className="total-price">К оплате <span>{totalPrice} грн</span></div>
-        <a className="paid-link">Перейти к оплате</a>
+        <button className="paid-link">Перейти к оплате</button>
     </div>
   )
 }

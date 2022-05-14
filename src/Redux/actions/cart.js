@@ -3,16 +3,6 @@ export const addItem = (item) => ({
     payload: item,
 })
 
-export const addAmount = (id) => ({
-    type: "ADD_AMOUNT",
-    payload: id
-})
-
-export const reduceAmount = (id) => ({
-    type: "REDUCE_AMOUNT",
-    payload: id
-})
-
 export const removeItem = (id) => ({
     type: "REMOVE_ITEM",
     payload: id
