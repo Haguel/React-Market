@@ -9,6 +9,6 @@ Install the dependencies by running the following command on the cmd in the proj
 Use the following command to start the app in the development mode: `npm run start`
 #### Or
 Use the following command to start the app in the production mode: `npm run build`
-then go in the `build` folder and them use `npm run start`
+then go in the `build` folder and theт use `npm run start`
 ### Thirdly
 See the finished result by clicking on the following link: http://localhost:3000
