@@ -25,7 +25,7 @@ export default function CartItem({item, id, dispatch}) {
   return (
     <div className='cart-item'>
       <div className='cart-product-container'>
-        <div className='cart-product-image'><img src={item.image} alt="Product" /></div>
+        <div className='cart-product-image'><img src={item.image} alt={item.alt} /></div>
         <div className='cart-product-info'>
             <div className='cart-product-title'>{item.title}</div>
             <div className='cart-price-info'>

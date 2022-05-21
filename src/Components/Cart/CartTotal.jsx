@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import '../../Styles/Cart/CartTotal.scss'
 
 export default function CartTotal() {
-  const {totalPrice} = useSelector(({cart}) => cart);
+  const {totalPrice} = useSelector(({cart}) => cart)
   return (
     <div className='cart-total'>
         <div className="total-price">К оплате <span>{totalPrice} грн</span></div>
